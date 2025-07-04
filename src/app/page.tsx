@@ -410,7 +410,6 @@ export default function Page() {
                 skills={[
                   "React",
                   "Next.js",
-                  "TypeScript",
                   "Tailwind CSS",
                   "HTML5",
                   "CSS3",
@@ -427,7 +426,6 @@ export default function Page() {
                   "GraphQL",
                   "MongoDB",
                   "SQL",
-                  "Firebase",
                 ]}
               />
               <HoverCard
