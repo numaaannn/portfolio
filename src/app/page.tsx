@@ -283,7 +283,7 @@ export default function Page() {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="numaan.y.opai@gmail.com"
                 className="text-cyan-400 hover:text-cyan-300 text-3xl transition"
                 aria-label="Email"
               >
