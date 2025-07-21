@@ -228,7 +228,7 @@ export default function Page() {
                       "impact",
                       "exploration",
                       "connection",
-                    ]}
+                    ] as string[]}
                   />
                 </div>
                 <div
