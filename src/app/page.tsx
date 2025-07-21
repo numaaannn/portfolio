@@ -284,7 +284,7 @@ export default function Page() {
               </a>
             </div>
             <div className="text-neutral-400 text-lg">
-              <span>Let's connect: </span>
+              <span>Let&apos;s connect!</span>
               <a href="mailto:Numaan.y.opai@gmail.com" className="text-cyan-400 hover:underline ml-1">Numaan.y.opai@gmail.com</a>
             </div>
           </section>
@@ -302,50 +302,50 @@ export default function Page() {
             <div className="max-w-3xl leading-relaxed text-neutral-300 text-lg tracking-wide space-y-6">
               {/* Introduction */}
               <div>
-                <span className="font-semibold text-cyan-400">Education & Specialization:</span>
+                <span className="font-semibold text-cyan-400">Education &amp; Specialization:</span>
                 <p>
-                  I'm a Master's student specializing in <span className="text-cyan-300">Artificial Intelligence and Machine Learning</span>. My technical toolkit includes Python, Java, OOP, SQL, HTML, CSS, and Data Science.
+                  I&apos;m a Master&apos;s student specializing in <span className="text-cyan-300">Artificial Intelligence and Machine Learning</span>. My technical toolkit includes Python, Java, OOP, SQL, HTML, CSS, and Data Science.
                 </p>
               </div>
               {/* Web Development Passion */}
               <div>
                 <span className="font-semibold text-cyan-400">Web Development Enthusiast:</span>
                 <p>
-                  Recently, I've developed a strong passion for web development—especially building full-stack applications with <span className="text-cyan-300">React</span>, <span className="text-cyan-300">Next.js</span>, and <span className="text-cyan-300">Node.js</span>. I enjoy creating responsive, user-friendly frontends and pairing them with robust backends and efficient data handling.
+                  Recently, I&apos;ve developed a strong passion for web development—especially building full-stack applications with <span className="text-cyan-300">React</span>, <span className="text-cyan-300">Next.js</span>, and <span className="text-cyan-300">Node.js</span>. I enjoy creating responsive, user-friendly frontends and pairing them with robust backends and efficient data handling.
                 </p>
               </div>
               {/* Backend Focus */}
               <div>
                 <span className="font-semibold text-cyan-400">Backend Strengths:</span>
                 <p>
-                  While backend development is where I feel most at home—thanks to my comfort with Java’s object-oriented strengths and SQL’s data structuring power—I’m always evolving my skills to become a well-rounded full-stack developer.
+                  While backend development is where I feel most at home—thanks to my comfort with Java&#39;s object-oriented strengths and SQL&#39;s data structuring power—I&#39;m always evolving my skills to become a well-rounded full-stack developer.
                 </p>
               </div>
               {/* Professional Experience */}
               <div>
                 <span className="font-semibold text-cyan-400">Professional Experience:</span>
                 <p>
-                  Alongside my academic journey, I’ve worked as a <span className="text-cyan-300">Venue Manager</span> and <span className="text-cyan-300">Marketing Manager</span> at Sapphire Farms, a hospitality venture in Nagpur. In these roles, I led customer experience, event coordination, digital marketing, and operations—gaining practical experience in sales, strategy, market research, and data-driven decision-making.
+                  Alongside my academic journey, I&#39;ve worked as a <span className="text-cyan-300">Venue Manager</span> and <span className="text-cyan-300">Marketing Manager</span> at Sapphire Farms, a hospitality venture in Nagpur. In these roles, I led customer experience, event coordination, digital marketing, and operations—gaining practical experience in sales, strategy, market research, and data-driven decision-making.
                 </p>
               </div>
               {/* Bridging Business & Tech */}
               <div>
-                <span className="font-semibold text-cyan-400">Connecting Business & Technology:</span>
+                <span className="font-semibold text-cyan-400">Connecting Business &amp; Technology:</span>
                 <p>
-                  This real-world exposure helps me bridge business needs with tech solutions. Now, I’m combining my background with technical skills to build smart, scalable systems that improve efficiency and elevate user experience.
+                  This real-world exposure helps me bridge business needs with tech solutions. Now, I&#39;m combining my background with technical skills to build smart, scalable systems that improve efficiency and elevate user experience.
                 </p>
               </div>
               {/* Passion & Opportunities */}
               <div>
-                <span className="font-semibold text-cyan-400">Passion & Opportunities:</span>
+                <span className="font-semibold text-cyan-400">Passion &amp; Opportunities:</span>
                 <p>
-                  I'm especially passionate about how <span className="text-cyan-300">AI</span>, <span className="text-cyan-300">automation</span>, and <span className="text-cyan-300">full-stack web technologies</span> can transform traditional businesses and deliver real impact.
+                  I&apos;m especially passionate about how <span className="text-cyan-300">AI</span>, <span className="text-cyan-300">automation</span>, and <span className="text-cyan-300">full-stack web technologies</span> can transform traditional businesses and deliver real impact.
                 </p>
                 <p>
-                  <span className="font-semibold">💼 Open to:</span> Internships, collaborations, or any opportunity where I can learn, grow, and contribute meaningfully.
+                  <span className="font-semibold">&#128188; Open to:</span> Internships, collaborations, or any opportunity where I can learn, grow, and contribute meaningfully.
                 </p>
                 <p>
-                  <span className="font-semibold">Let’s connect!</span>
+                  <span className="font-semibold">Let&apos;s connect!</span>
                 </p>
               </div>
             </div>
@@ -565,7 +565,7 @@ export default function Page() {
           >
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-12 border-b-4 border-cyan-400 w-max mx-auto pb-2 tracking-wide">
-                Licenses & Certifications
+                Licenses &amp; Certifications
               </h2>
               <div className="space-y-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
