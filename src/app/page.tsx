@@ -284,7 +284,7 @@ export default function Page() {
               </a>
             </div>
             <div className="text-neutral-400 text-lg">
-              <span>Let&apos;s connect!</span>
+             <p>Lets connect!</p>
               <a href="mailto:Numaan.y.opai@gmail.com" className="text-cyan-400 hover:underline ml-1">Numaan.y.opai@gmail.com</a>
             </div>
           </section>
@@ -304,14 +304,14 @@ export default function Page() {
               <div>
                 <span className="font-semibold text-cyan-400">Education &amp; Specialization:</span>
                 <p>
-                  I&apos;m a Master&apos;s student specializing in <span className="text-cyan-300">Artificial Intelligence and Machine Learning</span>. My technical toolkit includes Python, Java, OOP, SQL, HTML, CSS, and Data Science.
+                  I am a Masters student specializing in <span className="text-cyan-300">Artificial Intelligence and Machine Learning</span>. My technical toolkit includes Python, Java, OOP, SQL, HTML, CSS, and Data Science.
                 </p>
               </div>
               {/* Web Development Passion */}
               <div>
                 <span className="font-semibold text-cyan-400">Web Development Enthusiast:</span>
                 <p>
-                  Recently, I&apos;ve developed a strong passion for web development—especially building full-stack applications with <span className="text-cyan-300">React</span>, <span className="text-cyan-300">Next.js</span>, and <span className="text-cyan-300">Node.js</span>. I enjoy creating responsive, user-friendly frontends and pairing them with robust backends and efficient data handling.
+                  Recently, I have developed a strong passion for web development—especially building full-stack applications with <span className="text-cyan-300">React</span>, <span className="text-cyan-300">Next.js</span>, and <span className="text-cyan-300">Node.js</span>. I enjoy creating responsive, user-friendly frontends and pairing them with robust backends and efficient data handling.
                 </p>
               </div>
               {/* Backend Focus */}
@@ -339,7 +339,7 @@ export default function Page() {
               <div>
                 <span className="font-semibold text-cyan-400">Passion &amp; Opportunities:</span>
                 <p>
-                  I&apos;m especially passionate about how <span className="text-cyan-300">AI</span>, <span className="text-cyan-300">automation</span>, and <span className="text-cyan-300">full-stack web technologies</span> can transform traditional businesses and deliver real impact.
+                  I am especially passionate about how <span className="text-cyan-300">AI</span>, <span className="text-cyan-300">automation</span>, and <span className="text-cyan-300">full-stack web technologies</span> can transform traditional businesses and deliver real impact.
                 </p>
                 <p>
                   <span className="font-semibold">&#128188; Open to:</span> Internships, collaborations, or any opportunity where I can learn, grow, and contribute meaningfully.
@@ -565,7 +565,7 @@ export default function Page() {
           >
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold text-center mb-12 border-b-4 border-cyan-400 w-max mx-auto pb-2 tracking-wide">
-                Licenses &amp; Certifications
+                Licenses and Certifications
               </h2>
               <div className="space-y-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
