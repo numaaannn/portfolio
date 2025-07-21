@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { FlipWords } from "@/components/ui/flip-words";
-
+import Image from "next/image";
 // ----------------------------
 // Navbar Component
 // ----------------------------
@@ -196,11 +196,14 @@ export default function Page() {
             <div className="flex flex-col-reverse sm:flex-row items-center justify-center gap-10 w-full max-w-4xl mx-auto">
               {/* Left: Profile Photo */}
                 <div className="flex-shrink-0 flex justify-center sm:justify-start w-full sm:w-auto -mt-24">
-                  <img
-                  src="/Screenshot 2025-07-03 152722.png"
-                  alt="Numaan Opai"
-                  className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-full border-4 border-cyan-400 shadow-lg hover:scale-105 transition-transform duration-300 bg-cyan-950/30"
-                  />
+                  
+<Image
+  src="/Screenshot 2025-07-03 152722.png"
+  alt="Numaan Opai"
+  width={256} // or 256 for sm:w-64
+  height={256}
+  className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-full border-4 border-cyan-400 shadow-lg hover:scale-105 transition-transform duration-300 bg-cyan-950/30"
+/>
                 </div>
               {/* Right: Name & FlipWords */}
               <div className="flex-1 flex flex-col items-center sm:items-start text-center sm:text-left">
@@ -284,7 +287,7 @@ export default function Page() {
               </a>
             </div>
             <div className="text-neutral-400 text-lg">
-             <p>Lets connect!</p>
+              <span>Lets connect! </span>
               <a href="mailto:Numaan.y.opai@gmail.com" className="text-cyan-400 hover:underline ml-1">Numaan.y.opai@gmail.com</a>
             </div>
           </section>
@@ -655,11 +658,14 @@ export default function Page() {
                 className="bg-transparent border border-neutral-800 rounded-xl p-6 shadow-lg transition duration-300 group flex flex-col h-full backdrop-blur-sm hover:shadow-[0_0_15px_4px_rgba(6,182,212,0.7)]"
               >
                 {/* Project Image */}
-                <img
-                  src="\Screenshot 2025-07-03 175732.png"
-                  alt="Personal Portfolio Website"
-                  className="w-full h-40 object-cover rounded-lg mb-4 border border-cyan-900/30"
-                />
+                
+<Image
+  src="/Screenshot 2025-07-03 175732.png"
+  alt="Personal Portfolio Website"
+  width={600}
+  height={160}
+  className="w-full h-40 object-cover rounded-lg mb-4 border border-cyan-900/30"
+/>
                 <h3 className="text-xl font-bold text-cyan-300 mb-2 group-hover:text-cyan-400 transition">
                   Personal Portfolio Website
                 </h3>
