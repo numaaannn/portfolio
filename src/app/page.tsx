@@ -207,6 +207,8 @@ export default function Page() {
     <>
       {/* Background Sparkles */}
       <div className="fixed inset-0 -z-10">
+        {/* iOS Safari fallback background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 supports-[background-attachment:fixed]:hidden" />
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
