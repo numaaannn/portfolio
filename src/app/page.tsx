@@ -327,7 +327,7 @@ export default function Page() {
               </a>
             </div>
             <div className="text-neutral-400 text-base sm:text-lg text-center max-w-md">
-              <span>Let's connect! </span>
+              <span>Lets connect! </span>
               <a href="mailto:Numaan.y.opai@gmail.com" className="text-cyan-400 hover:underline break-all">Numaan.y.opai@gmail.com</a>
             </div>
           </section>
