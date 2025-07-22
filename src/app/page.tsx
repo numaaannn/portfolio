@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { TracingBeam } from "@/components/ui/tracing-beam";
@@ -203,22 +203,89 @@ function HoverCard({
 // Main Page Component
 // ----------------------------
 export default function Page() {
+  const [isIOS, setIsIOS] = useState(false);
+
+  useEffect(() => {
+    // Detect iOS devices
+    const detectIOS = () => {
+      return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    };
+    
+    setIsIOS(detectIOS());
+  }, []);
+
   return (
     <>
-      {/* Background Sparkles */}
+      {/* Background with iOS-specific handling */}
       <div className="fixed inset-0 -z-10">
-        {/* iOS Safari fallback background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 supports-[background-attachment:fixed]:hidden" />
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.7}
-          maxSize={1.6}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
+        {isIOS ? (
+          // iOS: Use CSS animation fallback with gradient background
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 ios-stars" />
+        ) : (
+          // Non-iOS: Use particles with transparent background
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.7}
+            maxSize={1.6}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+          />
+        )}
       </div>
+
+      {/* iOS CSS Stars Animation */}
+      <style jsx global>{`
+        .ios-stars {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .ios-stars::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: 
+            radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+            radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+            radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+            radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+            radial-gradient(2px 2px at 160px 30px, #fff, transparent);
+          background-repeat: repeat;
+          background-size: 200px 100px;
+          animation: sparkle 20s linear infinite;
+        }
+        
+        .ios-stars::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: 
+            radial-gradient(1px 1px at 50px 50px, rgba(255,255,255,0.4), transparent),
+            radial-gradient(2px 2px at 100px 20px, rgba(255,255,255,0.7), transparent),
+            radial-gradient(1px 1px at 150px 90px, #fff, transparent);
+          background-repeat: repeat;
+          background-size: 180px 120px;
+          animation: sparkle 15s linear infinite reverse;
+        }
+        
+        @keyframes sparkle {
+          from {
+            transform: translateY(0);
+          }
+          to {
+            transform: translateY(-100px);
+          }
+        }
+      `}</style>
 
       {/* Main Content Wrapper with Tracing Beam */}
       {/* Navbar */}
