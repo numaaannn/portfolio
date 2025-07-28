@@ -206,10 +206,9 @@ export default function Page() {
   const [isIOS, setIsIOS] = useState(false);
 
   useEffect(() => {
-    // Detect iOS devices
+    // Detect iOS devices only
     const detectIOS = () => {
-      return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      return /iPad|iPhone|iPod/.test(navigator.userAgent);
     };
     
     setIsIOS(detectIOS());
@@ -218,7 +217,7 @@ export default function Page() {
   return (
     <>
       {/* Background with iOS-specific handling */}
-      <div className="fixed inset-0 -z-10">
+      <div className="fixed inset-0 -z-10 bg-black">
         {isIOS ? (
           // iOS: Simple solid black background
           <div className="absolute inset-0 bg-black" />
