@@ -300,7 +300,7 @@ export default function Page() {
                     View My Work
                   </a>
                   <a
-                    href="\cv.pdf"
+                    href="/cv.pdf"
                     download
                     className="btn px-6 sm:px-8 py-3 sm:py-4 rounded-md bg-transparent border border-white/6 text-white font-medium text-sm sm:text-base"
                   >
@@ -342,7 +342,7 @@ export default function Page() {
               </a>
             </div>
             <div className="text-neutral-400 text-base sm:text-lg text-center max-w-md">
-              <span>Lets connect! </span>
+              <span>Let&apos;s connect! </span>
               <a href="mailto:Numaan.y.opai@gmail.com" className="text-cyan-400 hover:underline break-all">numaan.y.opai@gmail.com</a>
             </div>
           </section>
@@ -361,7 +361,7 @@ export default function Page() {
 <div>
   <span className="font-semibold text-cyan-400">Education &amp; Specialization:</span>
   <p>
-    I’m an MCA student who learns by building. During my Web Development internship, I worked on real‑world
+    I&apos;m an MCA student who learns by building. During my Web Development internship, I worked on real‑world
     frontend projects using <span className="text-cyan-300">Next.js</span>, <span className="text-cyan-300">React</span>, and
     <span className="text-cyan-300">Tailwind CSS</span>, focusing on clean UI and responsive design.
   </p>
@@ -372,7 +372,7 @@ export default function Page() {
 <div>
   <span className="font-semibold text-cyan-400">Data Science:</span>
   <p>
-    Driven by curiosity to understand the data behind products, I’m currently doing a Data Science internship where I
+    Driven by curiosity to understand the data behind products, I&apos;m currently doing a Data Science internship where I
     work with <span className="text-cyan-300">Python</span>, <span className="text-cyan-300">Pandas</span>,
     <span className="text-cyan-300">NumPy</span>, and Machine Learning algorithms to analyze data and extract meaningful insights.
   </p>
@@ -383,7 +383,7 @@ export default function Page() {
 <div>
   <span className="font-semibold text-cyan-400">Approach:</span>
   <p>
-    I enjoy combining a developer’s mindset with data‑driven thinking to solve real problems — building robust
+    I enjoy combining a developer&apos;s mindset with data‑driven thinking to solve real problems — building robust
     products informed by insights.
   </p>
 </div>
@@ -395,7 +395,7 @@ export default function Page() {
   <p>
     <span className="font-semibold"> Open to:</span> internships and roles in Data Science.
   </p>
-  <p className="font-semibold">Let's connect!</p>
+  <p className="font-semibold">Let&apos;s connect!</p>
 </div>
           </section>
           {/* -------------------------------- */}
@@ -410,7 +410,7 @@ export default function Page() {
   </h2>
   <div className="max-w-5xl leading-relaxed text-neutral-300 text-base sm:text-lg tracking-wide">
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 mt-6">
-          {[
+      {[
         {
           role: "Web Development Intern",
           company: "Smart Software Solution",
@@ -430,7 +430,7 @@ export default function Page() {
             "Created basic charts and tables to communicate findings."
           ]
         },
-      ].map((item, idx) => (
+      ].map((item: { role: string; company: string; description: string[]; duration?: string }, idx: number) => (
         <div
           key={idx}
           className="glass-soft rounded-xl p-6 transition card-hover group"
@@ -439,13 +439,13 @@ export default function Page() {
           <p className="text-neutral-200 text-base mb-1">
             <span className="font-semibold text-cyan-400">Company:</span> {item.company}
           </p>
-          {(item as any).duration && (
+          {item.duration && (
             <p className="text-neutral-400 text-xs mb-3">
-              <span className="font-semibold">Duration:</span> {(item as any).duration}
+              <span className="font-semibold">Duration:</span> {item.duration}
             </p>
           )}
           <ul className="list-disc list-inside text-neutral-300 text-sm space-y-1">
-            {item.description.map((point, i) => (
+            {item.description.map((point: string, i: number) => (
               <li key={i}>{point}</li>
             ))}
           </ul>
