@@ -299,13 +299,13 @@ export default function Page() {
                   >
                     View My Work
                   </a>
-                  <a
-                    href="/cv.pdf"
+                    <a
+                    href="/Numaan Opai Resume.pdf"
                     download
                     className="btn px-6 sm:px-8 py-3 sm:py-4 rounded-md bg-transparent border border-white/6 text-white font-medium text-sm sm:text-base"
-                  >
+                    >
                     Download My CV
-                  </a>
+                    </a>
                 </div>
               </div>
             </div>
