@@ -681,12 +681,14 @@ export default function Page() {
                   title: "Personal Portfolio Website",
                   description: "A modern, responsive portfolio built with Next.js, React, and Tailwind CSS. Features smooth animations, interactive sections, and a clean UI.",
                   technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+                  link: "https://your-portfolio-link.com",
                   },
                   {
-                  image: "/project2.png",
-                  title: "Ecommerce Website",
+                  image: "/Screenshot 2026-02-01 155259.png",
+                  title: "Silver Shop - Ecommerce Platform",
                   description: "A fully functional ecommerce platform with product listings, shopping cart, and checkout flow built with modern web technologies.",
                   technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+                  link: "https://numaanssilver-shop-silver.vercel.app/",
                   },
                 ].map((project, idx) => (
                   <div
@@ -694,28 +696,36 @@ export default function Page() {
                   className="glass-soft rounded-xl p-6 transition card-hover group flex flex-col h-full mb-8"
                   >
                   <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={600}
-                    height={160}
-                    className="w-full h-40 object-cover rounded-lg mb-4 border border-cyan-900/30"
+                  src={project.image}
+                  alt={project.title}
+                  width={600}
+                  height={160}
+                  className="w-full h-40 object-cover rounded-lg mb-4 border border-cyan-900/30"
                   />
                   <h3 className="text-xl font-bold text-cyan-300 mb-2 group-hover:text-cyan-400 transition">
-                    {project.title}
+                  {project.title}
                   </h3>
                   <p className="text-neutral-200 text-base mb-3 flex-1">
-                    {project.description}
+                  {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 bg-cyan-900/40 text-cyan-200 rounded text-xs font-semibold"
-                    >
-                      {tech}
-                    </span>
-                    ))}
+                  {project.technologies.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-2 py-1 bg-cyan-900/40 text-cyan-200 rounded text-xs font-semibold"
+                  >
+                    {tech}
+                  </span>
+                  ))}
                   </div>
+                  <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 rounded-md border border-cyan-400 text-cyan-300 font-semibold text-sm hover:bg-cyan-400/10 transition"
+                  >
+                  View Project
+                  </a>
                   </div>
                 ))}
                 <div className="mt-auto flex gap-3">
