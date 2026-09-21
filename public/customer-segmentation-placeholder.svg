@@ -1,0 +1,14 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#07111F"/>
+  <path d="M0 560C180 500 300 580 470 520C650 456 760 500 920 430C1040 378 1110 390 1200 350V675H0V560Z" fill="#0E2A3B"/>
+  <path d="M0 590C180 530 320 615 500 548C680 480 810 540 960 462C1060 410 1125 420 1200 390" stroke="#42D3C7" stroke-width="4" opacity=".8"/>
+  <g fill="#F4C95D">
+    <circle cx="260" cy="320" r="16"/><circle cx="420" cy="240" r="12"/><circle cx="520" cy="390" r="18"/><circle cx="700" cy="285" r="14"/><circle cx="850" cy="365" r="20"/><circle cx="965" cy="210" r="13"/>
+  </g>
+  <g stroke="#9BE7DF" stroke-width="2" opacity=".55">
+    <path d="M260 320L420 240L520 390L700 285L850 365L965 210"/>
+    <path d="M260 320L700 285M420 240L850 365M520 390L965 210"/>
+  </g>
+  <text x="80" y="120" fill="#F7FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">CUSTOMER SEGMENTS</text>
+  <text x="84" y="164" fill="#9BE7DF" font-family="Arial, sans-serif" font-size="22">K-MEANS  /  PCA  /  DATA INSIGHTS</text>
+</svg>

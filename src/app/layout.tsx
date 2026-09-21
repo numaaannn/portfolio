@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Numaans portfolio",
-  description: "Numaans portfolio website showcasing projects and skills.",
+  title: "Numaan Opai | Data Science & Analytics",
+  description: "Portfolio of Numaan Opai, an MCA (AI & ML) graduate focused on data science, machine learning, and practical analytics.",
 };
 
 export default function RootLayout({
