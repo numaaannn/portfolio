@@ -1,0 +1,17 @@
+@media (prefers-reduced-motion: reduce) {
+  /* Keep brief, one-time entrance effects while respecting reduced-motion settings. */
+  .old-profile,
+  .old-profile img,
+  .old-hero-copy,
+  .old-section,
+  .flipping-tile {
+    animation-duration: 0.8s !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  /* Disable continuous background and marquee movement for reduced-motion users. */
+  .aurora-gradient,
+  .moving-cards-track {
+    animation: none !important;
+  }
+}
